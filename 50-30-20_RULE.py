@@ -6,20 +6,18 @@ about the recommended allocation for each category and calculate
 the variance between the recommended and actual spending."""
 
 # Information for the user about the rule 50-30-20.
-print("")
-print("*"*80)
-print("")
+
+print("\n*\n"*80)
 print("The most accreditee Economist"
       "suggest that we should allocate our spending budget in 3 category: \n"
       "50% in NEED,\n30% in WANT,\n20% in SAVING \n"
       "Need include essential as Rent/Mortgage, bills, food and transport \n"
       "Want include not essential as eating out, shopping, trip etc. \n"
       "Saving is the budget dedicate to the future: saving, pension or pay debt\n")
-print("*"*80)
-print("")
+print("\n*\n"*80)
 print("The follow program will tell you if you are allocate your salary in a healthy way")
-print("*"*80)
-print("")
+print("\n*\n"*80)
+
 
 # Ask the user's salary and how his distribute inside the different categories.
 # Loop function will keep asking user to enter valid date.
@@ -48,9 +46,8 @@ while True:
     total_user_spending = user_need + user_want + user_saving
 
     # Display if them allocation as perceptual is matching the rule 50-30-20.
-    print("")
-    print("Using the data you provide: ")
-    print("")
+    
+    print("\nUsing the data you provide: \n")
     need_comparator = (user_need - need) / need * 100
     print(f"Your NEED category is {user_need},"
           f"which is {need_comparator:.2f}% "
@@ -65,9 +62,7 @@ while True:
           f"which is {saving_comparator:.2f}% "
           f"{'more' if saving_comparator > 0 else 'less'} than recommended")
 
-    print("")
-    print("*"*80)
-    print("")
+    print("\n*\n"*80)
     # Display how suppose to be the ideal distribution of the salary.
     print("Base on your salary you ideal amount for the different category is:\n")
     print(f"Need = {need}")
