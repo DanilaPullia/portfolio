@@ -128,5 +128,5 @@ while True:
               "without considering interest or other form of income, "
               f"at {age_retire} years old, will be: {round(saving_retire,2)}")
     break
-print("")
+print("\n Thanks for using our program")
 
